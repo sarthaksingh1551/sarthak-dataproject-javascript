@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Master JS Data Project</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center; margin-top: 10px;">Company Master JavaScript Data Project</h1>
+    </div>
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+    </figure>
+
+    <!-- Cards -->
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;">
+        <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-body text-dark">
+                <h5 class="card-title">Histogram of Authorized Cap</h5>
+                <a onclick="authorizedCap()"><button type="button" class="btn btn-outline-secondary">View Graph</button></a>
+            </div>
+        </div>
+
+        <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-body text-dark">
+                <h5 class="card-title">Bar Plot of Company Registration by Year</h5>
+                <a onclick="companyRegByYear()"><button type="button" class="btn btn-outline-secondary">View Graph</button></a>
+            </div>
+        </div>
+
+        <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-body text-dark">
+                <h5 class="card-title">Number of Registrations per Principal Business Activity</h5>
+                <a onclick="regsPerPrincipalBusinessActivity()"><button type="button" class="btn btn-outline-secondary">View Graph</button></a>
+            </div>
+        </div>
+
+        <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-body text-dark">
+                <h5 class="card-title">No of Registration per Principle Business Activity for 4yrs</h5>
+                <a onclick="regsPerPrincipalBusinessActivity4Yrs()"><button type="button" class="btn btn-outline-secondary">View Graph</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- My Graph Scripts -->
+    <script src="graph_scripts/graph1.js"></script>
+    <script src="graph_scripts/graph2.js"></script>
+    <script src="graph_scripts/graph3.js"></script>
+    <script src="graph_scripts/graph4.js"></script>
+    <!-- Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <!-- Highcharts Script-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+</body>
+
+</html>
